@@ -1,0 +1,66 @@
+// JAVA PATTERN
+---------------------------------
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        int alphabet=65,n;
+        System.out.print("Enter the n value: ");  
+        Scanner sc = new Scanner(System.in);  
+         n= sc.nextInt(); 
+        for(int i=1; i<=n ; i++)
+        {
+            for(int j=1; j<=i; j++)
+            {
+                if(i%2==1)
+               System.out.print((char)(alphabet +j -1)+" ");
+               else
+               System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//RUBY
+--------------------------------------------------------------
+puts "Enter the number: "
+n = Integer(gets.chomp)
+for i in 1..n do 
+    for j in 1..i do 
+        if i%2!=0 then
+            printf "%c",j+64
+        else
+            print j 
+        end 
+    end 
+    puts
+end
+
+
+
+
+
+//GO
+----------------------------------------------------------------------
+
+
+package main
+import "fmt"
+
+func main() {
+    var n int;
+    fmt.Print("Enter the number: ")
+    fmt.Scanf("%d",&n);
+    for i:=1;i<=n;i++{
+        for j:=1;j<=i;j++{
+            if(i%2!=0){
+                fmt.Printf("%c",j+64)
+            }else{
+                fmt.Printf("%d",j)
+            }
+        }
+        fmt.Println("")
+    }
+}
